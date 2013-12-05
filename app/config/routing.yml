@@ -1,6 +1,6 @@
 geekhub_task8:
     resource: "@GeekhubTask8Bundle/Resources/config/routing.yml"
-    prefix:   /form
+    prefix:   /task8
 
 # Internal routing configuration to handle ESI
 #_internal:
