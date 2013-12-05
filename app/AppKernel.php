@@ -19,7 +19,8 @@ class AppKernel extends Kernel
             new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
             new Mopa\Bundle\BootstrapSandboxBundle\MopaBootstrapSandboxBundle(),
             new Liip\ThemeBundle\LiipThemeBundle(),
-            new Knp\Bundle\MenuBundle\KnpMenuBundle()
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Geekhub\Task8Bundle\GeekhubTask8Bundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
