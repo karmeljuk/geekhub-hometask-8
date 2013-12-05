@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new Liip\ThemeBundle\LiipThemeBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Geekhub\Task8Bundle\GeekhubTask8Bundle(),
+            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
