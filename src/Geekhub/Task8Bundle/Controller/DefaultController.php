@@ -5,7 +5,7 @@ namespace Geekhub\Task8Bundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Geekhub\Task8Bundle\Entity\Form;
 use Symfony\Component\HttpFoundation\Request;
-
+use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
@@ -25,6 +25,14 @@ class DefaultController extends Controller
 
             if ($form->isValid()) {
                 // выполняем прочие действие, например, сохраняем задачу в базе данных
+                $product = new Form();
+                $product->setName('A Foo Bar');
+                $product->setEmail('19.99');
+                $product->setBody('Lorem ipsum dolor');
+
+                $em = $this->getDoctrine()->getEntityManager();
+                $em->persist($product);
+                $em->flush();
 
                 return $this->redirect($this->generateUrl('task_success'));
             }
