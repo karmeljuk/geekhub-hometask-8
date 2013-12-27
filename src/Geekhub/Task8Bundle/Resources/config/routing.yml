@@ -1,0 +1,3 @@
+form:
+    pattern:  /
+    defaults: { _controller: GeekhubTask8Bundle:Default:new }

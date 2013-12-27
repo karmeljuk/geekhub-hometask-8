@@ -1,0 +1,30 @@
+{% extends 'MopaBootstrapBundle::base.html.twig' %}
+
+{% block title %}GuestBook{% endblock %}
+
+{% block headline %}Header{% endblock headline %}
+
+{% block content %}
+<div class="row">
+
+    <div class="col-lg-9">
+        <form class="well bs-example form-inline">
+            {{ form.vars.value.name }}
+            {{ form_start(form) }}
+            {{ form_errors(form) }}
+
+            {{ form_row(form.name) }}
+            {{ form_row(form.email) }}
+            {{ form_row(form.Submit) }}
+            {{ form_row(form.body) }}
+            {{ form_end(form) }}
+        </form>
+    </div>
+{% endblock content %}
+
+{% block footer %}
+<h1>Footer</h1>
+{% endblock footer %}
+
+{% block foot_script_assetic %}
+{% endblock foot_script_assetic %}

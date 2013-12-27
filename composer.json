@@ -20,7 +20,8 @@
         "sensio/generator-bundle": "2.3.*",
         "mopa/bootstrap-bundle": "dev-master",
         "mopa/bootstrap-sandbox-bundle": "dev-master",
-        "twbs/bootstrap": "dev-master"
+        "twbs/bootstrap": "dev-master",
+        "doctrine/doctrine-fixtures-bundle": "dev-master"
     },
     "require-dev": {
         "incenteev/composer-parameter-handler": "~2.0"
